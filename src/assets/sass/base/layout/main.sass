@@ -1,0 +1,34 @@
+html
+  height: 100%
+  overflow-y: scroll
+  overflow-x: hidden
+  -webkit-overflow-scrolling: touch
+
+  &.is-overflowed-mobile
+    +media-below(830)
+      overflow: hidden
+
+  &.is-overflowed
+    overflow: hidden
+
+
+body
+  position: relative
+  height: 100%
+  font-size: 16px
+  line-height: 1.42
+  color: #000000
+  background: #eeeeee
+  -webkit-font-smoothing: antialiased
+  +arial
+
+sup
+  font-size: 50%
+  line-height: 50%
+  vertical-align: top
+
+.is-hide
+  display: none !important
+
+.is-show
+  display: block !important

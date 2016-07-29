@@ -1,0 +1,17 @@
+=to($display)
+  display: $display
+  text-overflow: ellipsis
+  -o-text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden
+
+
+=to-lines($val)
+  -webkit-line-clamp: $val
+  overflow: hidden
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -o-text-overflow: ellipsis
+  text-overflow: ellipsis
+  white-space: normal
+  word-wrap: break-word

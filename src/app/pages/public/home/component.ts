@@ -1,20 +1,20 @@
 import { Component } from '@angular/core';
 
-import { SignInForm } from '../../../components/global/sign-in-form';
+import { Box } from '../../../components/box';
 
 @Component({
-  selector: 'sign-in',
+  selector: 'wrapper',
   providers: [],
   pipes: [ ],
   styleUrls: [ ],
   templateUrl: './template.pug',
 
   directives: [
-    SignInForm
+    Box
   ]
 
 })
 
-export class SignIn {
+export class PublicHome {
 
 }

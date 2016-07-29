@@ -1,9 +1,6 @@
-div.profile-activation-logo
-  img.logo-img(src="assets/images/drotrmarket.svg")
-
-ul.profile-activation-nav-list
-  li.profile-activation-nav-item(*ngFor="let item of items; let index = index;")
-    a.profile-activation-nav-link([routerLink]="[item.sref]"  routerLinkActive="is-active")
-      span.link-num
-        span.link-num-text() {{ index + 1 }}
-      span.link-text() {{ item.text }}
+div.fix
+  h2.header-logo Header
+  ul.header-nav
+    li.header-nav-item(*ngFor="let item of items;")
+      a.header-nav-link([routerLink]="item.sref"  routerLinkActive="is-active")
+        span.link-text() {{ item.text }}

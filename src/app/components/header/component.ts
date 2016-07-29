@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'profile-activation-nav',
+  selector: 'header',
   providers: [],
   directives: [],
   pipes: [],
@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   templateUrl: './template.pug',
 })
 
-export class ProfileActivationNav {
+export class Header {
 
   private items: any;
 
@@ -17,16 +17,12 @@ export class ProfileActivationNav {
 
      this.items = [
         {
-          sref: './main-info',
-          text: 'Общая информация'
+          sref: [''],
+          text: 'Home'
         },
         {
-          sref: './goods-and-schedule',
-          text: 'Товары и график работы'
-        },
-        {
-          sref: './documents-and-payments',
-          text: 'Документы и платежи'
+          sref: ['','about'],
+          text: 'About'
         }
      ]
   }

@@ -1,1 +1,1 @@
-export * from './sign.component';
+export * from './component';

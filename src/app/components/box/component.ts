@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'profile-activation-content-box',
+  selector: 'box',
   providers: [],
   directives: [],
   pipes: [],
@@ -10,7 +10,7 @@ import { Component, Input } from '@angular/core';
 })
 
 
-export class ProfileActivationContentBox {
+export class Box {
   @Input() title: any = "Default title";
 
 }

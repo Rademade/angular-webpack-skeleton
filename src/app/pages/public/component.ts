@@ -1,13 +1,16 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
+import { Header } from '../../components/header';
 
 @Component({
-  selector: 'sign',
+  selector: 'wrapper',
   encapsulation: ViewEncapsulation.None,
-  templateUrl: 'sign.layout.pug',
-  directives: []
+  templateUrl: 'layout.pug',
+  directives: [
+    Header
+  ]
 })
 
-export class Sign {
+export class Public {
 
 }

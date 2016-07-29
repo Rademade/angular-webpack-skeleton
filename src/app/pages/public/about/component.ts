@@ -1,23 +1,21 @@
 import { Component } from '@angular/core';
 
-import { SignUpPlainForm } from '../../../components/global/sign-up-plain-form';
-import { SignUpRequestForm } from '../../../components/global/sign-up-request-form';
+import { Box } from '../../../components/box';
 
 
 @Component({
-  selector: 'sign-up',
+  selector: 'wrapper',
   providers: [],
   pipes: [],
   styleUrls: [],
   templateUrl: './template.pug',
 
   directives: [
-    SignUpPlainForm,
-    SignUpRequestForm
+    Box
   ]
 
 })
 
-export class SignUp {
+export class PublicAbout {
 
 }

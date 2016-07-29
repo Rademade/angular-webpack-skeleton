@@ -1,0 +1,10 @@
+=placeholder($font-size,$font-color)
+  $browser-list: ':-webkit' '-moz-' ':-moz-' '-ms-input-'
+
+  @each $val in $browser-list
+    &:#{$val}
+      color: $font-color
+      font-size: rem($font-size)
+      transition: color $transitionVal ease
+
++placeholder(#fff,15)

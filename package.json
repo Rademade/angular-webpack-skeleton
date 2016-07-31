@@ -2,7 +2,7 @@
   "name": "angular-webpack-skeleton",
   "version": "0.0.1",
   "description": "",
-    "keywords": [
+  "keywords": [
     "angular2",
     "webpack",
     "typescript"
@@ -96,6 +96,7 @@
     "file-loader": "^0.9.0",
     "gh-pages": "^0.11.0",
     "html-webpack-plugin": "^2.21.0",
+    "import-glob-loader": "^1.1.0",
     "imports-loader": "^0.6.5",
     "istanbul-instrumenter-loader": "^0.2.0",
     "json-loader": "^0.5.4",
@@ -114,6 +115,7 @@
     "remap-istanbul": "^0.6.3",
     "rimraf": "^2.5.2",
     "sass-loader": "^4.0.0",
+    "sass-resources-loader": "^1.0.2",
     "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.1",
     "svg-sprite-loader": "0.0.26",

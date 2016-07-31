@@ -71,8 +71,7 @@ module.exports = {
       },
       {
         test: /\.sass/,
-        loaders: ["style", "css", "sass"],
-        include: [helpers.root('src/assets/sass')]
+        loader: 'raw!sass!sass-resources'
       },
 
       {
@@ -94,9 +93,25 @@ module.exports = {
       }
     ]
   },
-  sassLoader: {
-    includePaths: [helpers.root('src/assets/sass')]
-  },
+  sassResources: [
+    helpers.root('src/app/styles/resources/variables/main.sass'),
+    helpers.root('src/app/styles/resources/mixins/keyframes.sass'),
+    helpers.root('src/app/styles/resources/mixins/animation.sass'),
+    helpers.root('src/app/styles/resources/mixins/clear.sass'),
+    helpers.root('src/app/styles/resources/mixins/fonts.sass'),
+    helpers.root('src/app/styles/resources/mixins/column.sass'),
+    helpers.root('src/app/styles/resources/mixins/media.sass'),
+    helpers.root('src/app/styles/resources/mixins/placeholder.sass'),
+    helpers.root('src/app/styles/resources/mixins/sprite.sass'),
+    helpers.root('src/app/styles/resources/mixins/text-indent.sass'),
+    helpers.root('src/app/styles/resources/mixins/text-overflow.sass'),
+    helpers.root('src/app/styles/resources/mixins/user-select.sass'),
+    helpers.root('src/app/styles/resources/functions/em.sass'),
+    helpers.root('src/app/styles/resources/functions/fonts.sass'),
+    helpers.root('src/app/styles/resources/functions/lh.sass'),
+    helpers.root('src/app/styles/resources/functions/ls.sass'),
+    // helpers.root('src/app/styles/resources/functions/item-count.sass')
+  ],
   plugins: [
     new ForkCheckerPlugin(),
 

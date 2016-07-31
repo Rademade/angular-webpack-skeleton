@@ -1,6 +1,7 @@
-div.fix
-  h2.header-logo Header
-  ul.header-nav
-    li.header-nav-item(*ngFor="let item of items;")
-      a.header-nav-link([routerLink]="item.sref"  routerLinkActive="is-active")
-        span.link-text() {{ item.text }}
+.header
+  div.fix
+    h2.header-logo Header
+    ul.header-nav
+      li.header-nav-item(*ngFor="let item of items;")
+        a.header-nav-link([routerLink]="item.sref"  routerLinkActive="is-active")
+          span.link-text() {{ item.text }}

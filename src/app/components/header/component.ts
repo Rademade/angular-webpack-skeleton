@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'header',
-  providers: [],
-  directives: [],
-  pipes: [],
-  styleUrls: [],
-  templateUrl: './template.pug',
+    selector: 'header',
+    styles: [require('./styles/_import.sass')],
+    templateUrl: './template.pug'
 })
 
 export class Header {

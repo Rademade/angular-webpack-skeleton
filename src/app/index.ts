@@ -1,7 +1,6 @@
 var files = require.context('../assets/images/sprite', false, /\.svg$/);
 files.keys().forEach(files);
 
-require('../assets/sass/manifest.sass');
 require('../assets/fonts/fonts.js');
 require('./services/mobile-detect.js');
 
